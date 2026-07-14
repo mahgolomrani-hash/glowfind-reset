@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Reset your GlowFind password</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Nunito:wght@400;600&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #E0708C;
+    --pink-dark: #CF5E7B;
+    --cream: #F7F7F4;
+    --ink: #1A1A1A;
+    --ink-soft: #4A4A4A;
+    --ink-faint: #8A8A8A;
+    --lavender: #ECEBFB;
+    --blush: #FBE6EC;
+    --green: #2E9A72;
+    --error: #D4485F;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--cream);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    color: var(--ink);
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: #FFFFFF;
+    border: 1px solid #EFE9E4;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(224, 112, 140, 0.10);
+  }
+  .banner {
+    background: linear-gradient(135deg, var(--lavender), var(--blush));
+    padding: 28px 24px 24px;
+    text-align: center;
+  }
+  .banner .wordmark {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+  }
+  .banner .tagline {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #5566E5;
+    margin-top: 2px;
+  }
+  .sparkle { display: block; margin: 0 auto 10px; }
+  .body { padding: 28px 24px 26px; }
+  h1 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  p.sub {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .field { margin-bottom: 12px; }
+  input[type="password"] {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    padding: 13px 14px;
+    border: 1px solid #E8E2DC;
+    border-radius: 12px;
+    background: #FBFAF8;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  input[type="password"]:focus { border-color: var(--pink); background: #FFFFFF; }
+  .btn {
+    display: block;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, var(--pink), var(--pink-dark));
+    border: none;
+    border-radius: 999px;
+    padding: 15px;
+    margin-top: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.15s, transform 0.1s;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn[disabled] { opacity: 0.5; cursor: default; }
+  .msg { font-size: 14px; text-align: center; margin-top: 10px; min-height: 18px; }
+  .msg.error { color: var(--error); }
+  .msg.ok { color: var(--green); }
+  .footer {
+    padding: 14px 24px;
+    background: #FBFAF8;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #B0AAA4;
+  }
+  .hidden { display: none; }
+  .bigmark { font-size: 44px; text-align: center; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="banner">
+    <svg class="sparkle" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+      <defs>
+        <radialGradient id="starGlow" cx="42%" cy="36%" r="75%">
+          <stop offset="0%" stop-color="#FDEFB2"/>
+          <stop offset="55%" stop-color="#F5D76E"/>
+          <stop offset="100%" stop-color="#EDC14D"/>
+        </radialGradient>
+      </defs>
+      <path fill="url(#starGlow)" d="M32 4 C34.5 15 37.5 20.5 43 24.5 C48.5 28.5 55 30 60 32 C55 34 48.5 35.5 43 39.5 C37.5 43.5 34.5 49 32 60 C29.5 49 26.5 43.5 21 39.5 C15.5 35.5 9 34 4 32 C9 30 15.5 28.5 21 24.5 C26.5 20.5 29.5 15 32 4 Z"/>
+      <circle cx="26.5" cy="30" r="2.4" fill="#4A3B18"/>
+      <circle cx="37.5" cy="30" r="2.4" fill="#4A3B18"/>
+      <path d="M27.5 37 Q32 40.5 36.5 37" stroke="#4A3B18" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <circle cx="23" cy="34.5" r="2" fill="#F2A9BC" opacity="0.75"/>
+      <circle cx="41" cy="34.5" r="2" fill="#F2A9BC" opacity="0.75"/>
+    </svg>
+    <div class="wordmark">GlowFind</div>
+    <div class="tagline">Your beauty companion</div>
+  </div>
+
+  <div class="body">
+    <!-- Form state -->
+    <div id="state-form">
+      <h1>Set a new password</h1>
+      <p class="sub">Pick something strong. When you are done, open the GlowFind app and sign in with it.</p>
+      <div class="field"><input type="password" id="pw" placeholder="New password" autocomplete="new-password"></div>
+      <div class="field"><input type="password" id="pw2" placeholder="Repeat new password" autocomplete="new-password"></div>
+      <button class="btn" id="save">Save new password</button>
+      <div class="msg error" id="err"></div>
+    </div>
+
+    <!-- Success state -->
+    <div id="state-done" class="hidden">
+      <div class="bigmark">🎉</div>
+      <h1>Password updated</h1>
+      <p class="sub">You are all set. Open GlowFind and sign in with your new password.</p>
+      <a class="btn" href="glowfind://">Open GlowFind</a>
+    </div>
+
+    <!-- Expired state -->
+    <div id="state-expired" class="hidden">
+      <div class="bigmark">⏳</div>
+      <h1>Link expired</h1>
+      <p class="sub">That reset link is no longer valid. Links only work once. Open the GlowFind app, tap Forgot password on the sign in screen, and request a fresh one.</p>
+      <a class="btn" href="glowfind://">Open GlowFind</a>
+    </div>
+  </div>
+
+  <div class="footer">GlowFind · glowfind.app</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+(function () {
+  var SUPABASE_URL = 'https://maavxxnpkrzttfggyrvu.supabase.co';
+  var SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1hYXZ4eG5wa3J6dHRmZ2d5cnZ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIwNTA0MzAsImV4cCI6MjA4NzYyNjQzMH0.hTJ_4VR1BuRDhJcu-hBvKoN1zl9Uy5OvScemH6TD2YU';
+
+  var client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON, {
+    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false }
+  });
+
+  function show(id) {
+    ['state-form', 'state-done', 'state-expired'].forEach(function (s) {
+      document.getElementById(s).classList.toggle('hidden', s !== id);
+    });
+  }
+
+  // Recovery tokens arrive in the #fragment (or ?code= for PKCE links).
+  function parseParams() {
+    var part = (location.hash || '').replace(/^#/, '') || location.search.replace(/^\?/, '');
+    var out = {};
+    part.split('&').forEach(function (kv) {
+      var eq = kv.indexOf('=');
+      if (eq > 0) {
+        try { out[decodeURIComponent(kv.slice(0, eq))] = decodeURIComponent(kv.slice(eq + 1)); } catch (e) {}
+      }
+    });
+    return out;
+  }
+
+  var params = parseParams();
+  // Scrub the tokens from the address bar and browser history.
+  try { history.replaceState(null, '', location.pathname); } catch (e) {}
+
+  var saveBtn = document.getElementById('save');
+  var err = document.getElementById('err');
+  var sessionReady = false;
+
+  function fail() { show('state-expired'); }
+
+  function init() {
+    if (params.error || params.error_code) { fail(); return; }
+    if (params.access_token && params.refresh_token) {
+      client.auth.setSession({ access_token: params.access_token, refresh_token: params.refresh_token })
+        .then(function (res) { if (res.error) fail(); else sessionReady = true; });
+      return;
+    }
+    if (params.code) {
+      client.auth.exchangeCodeForSession(params.code)
+        .then(function (res) { if (res.error) fail(); else sessionReady = true; });
+      return;
+    }
+    fail();
+  }
+
+  saveBtn.addEventListener('click', function () {
+    err.textContent = '';
+    var pw = document.getElementById('pw').value;
+    var pw2 = document.getElementById('pw2').value;
+    if (pw.length < 8) { err.textContent = 'Password needs at least 8 characters.'; return; }
+    if (pw !== pw2) { err.textContent = 'Passwords do not match.'; return; }
+    if (!sessionReady) { err.textContent = 'Still checking your link. Try again in a second.'; return; }
+    saveBtn.disabled = true;
+    saveBtn.textContent = 'Saving…';
+    client.auth.updateUser({ password: pw }).then(function (res) {
+      if (res.error) {
+        saveBtn.disabled = false;
+        saveBtn.textContent = 'Save new password';
+        err.textContent = res.error.message;
+        return;
+      }
+      client.auth.signOut({ scope: 'local' });
+      show('state-done');
+    });
+  });
+
+  init();
+})();
+</script>
+</body>
+</html>
